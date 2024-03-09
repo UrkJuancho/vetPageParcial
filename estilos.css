@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #166fb8;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.favicon {
+    border-radius: 50%;
+}
+
+.navigate-bar {
+    position: relative;
+}
+
+.body-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-bar {
+    display: inline-block;
+}
+
+.item-bar {
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    color: white;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+    /* Changed transition for animation */
+}
+
+.item-bar:hover {
+    width: 93vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(22, 143, 48);
+    color: black;
+    box-shadow: 2px 2px 1px rgb(255, 255, 255);
+    transform: scale(1.1);
+    /* Added transform for hover animation */
+}
+
+section {
+    padding: 20px;
+}
+
+#servicios {
+    text-align: center;
+}
+
+#vacunacion {
+    text-align: center;
+    border-radius: 10px;
+}
+
+#vacunacion:hover{
+    box-shadow: 2px 2px 4px rgb(16, 199, 25);
+}
+
+.contenedor-imagen {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    backface-visibility: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imagen-reverso {
+    backface-visibility: hidden;
+    transition: transform 0.5s ease-in-out;
+    transform: rotateY(180deg);
+}
+
+.contenedor-imagen:hover .imagen {
+    transform: rotateY(180deg);
+}
+
+.contenedor-imagen:hover .imagen-reverso {
+    transform: rotateY(0deg);
+}
+
+#footer {
+    background-color: #0e7746;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    flex: 1 0 33.33%;
+    padding: 0 10px;
+}
+
+.titulo {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.descripcion {
+    margin-bottom: 20px;
+}
+
+.lista-servicios,
+.lista-contacto,
+.lista-horario {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-servicios li,
+.lista-contacto li,
+.lista-horario li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0431f8;
+}
+
+i {
+    margin-right: 10px;
+}
